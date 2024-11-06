@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: none;
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    /* border: 2px solid blue; */
+    
+}
+
+#navbar{
+    display: flex;
+    height: 55px;
+    align-items: center;
+    position: sticky;
+    top: 5px;
+    
+
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+    
+}
+#logo{
+    margin: 8px 8px;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+  
+    
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    display: block;
+    padding:3px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: cursive;
+    color: antiquewhite;
+    
+}
+#navbar li a:hover{
+    background-color: black;
+    color: white;
+    
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3px 200px; */
+    margin: 50px;
+}
+#home::before{
+    background:url(img/bg1.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.90;
+
+}
+#home h1{
+    color: rgb(224, 231, 238);
+    text-align: center;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+#services-container{
+    margin: 50px 10px;
+    /* border: 2px solid blue; */
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid black;
+    padding: 14px;
+    margin: auto;
+    border-radius:30px ;
+    background-color: rgb(247, 228, 202);
+     height: 200px;
+    width: 200px;
+   
+
+
+}
+#services .box img{
+    display: block;
+    height: 80px;
+    border-radius: 20px;
+    margin: auto;
+
+}
+#services .box p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.h-primary{
+    text-align: center;
+}
+.h-secondary{
+    text-align: center;
+    font-family: 'Hubballi', sans-serif;
+}
+.center{
+    text-align: center;
+}
+#client-section{
+    /* position: relative; */
+    height: 450px;
+    /* margin:50px 0px; */
+    border: 2px solid black;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height: 123px;
+}
+.citem{
+    padding: 34px;
+}
